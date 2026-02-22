@@ -1,10 +1,16 @@
 /**
-* Template Name: Day
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Template Name: Day - Electricity Consumption Analysis Project
+* Updated: Feb 2026 with Bootstrap v5.2.3
 * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-* Author: BootstrapMade.com
+* Modified by: Navitha G for "Plugging into the Future" Project
+* Original Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
+* 
+* Project: An Exploration of Electricity Consumption Patterns in India (2019-2020)
+* Analyst: Navitha G
+* Contact: gnavitha555@gmail.com
 */
+
 (function() {
   "use strict";
 
@@ -174,13 +180,14 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * Porfolio isotope and filter - For Electricity Consumption Insights
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -204,14 +211,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox for insight images
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '.portfolio-lightbox',
+    title: 'Electricity Consumption Insight',
+    description: 'View detailed analysis'
   });
 
   /**
-   * Portfolio details slider
+   * Portfolio details slider for project gallery
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
@@ -239,4 +248,4 @@
     })
   });
 
-})()
+})();
